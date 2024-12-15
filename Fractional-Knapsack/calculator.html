@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnapSack Calculator</title>
+  <link rel="stylesheet" href="css/calculator.css" />
+</head>
+
+<body>
+
+  <section class="title-section" id="home">
+    <h1>Fractional Knapsack Problem</h1>
+  </section>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="calculator.html"><b>Calculator</b></a></li>
+      <li><a href="learn.html"><b>Learn</b></a></li>
+      <li><a href="code.html"><b>Code</b></a></li>
+    </ul>
+  </nav>
+<div class="main">
+  <div class="centered">
+    <div class="container">
+      <h2>KnapSack Calculator</h2>
+      <div class="input-section">
+
+        <label for="values">Profits (comma-separated):</label>
+        <input class="input" type="text" id="values" placeholder="eg. 60,100,120"><br>
+        <label for="weights">Weights (comma-separated):</label>
+        <input class="input" type="text" id="weights" placeholder="eg. 10,20,30"><br>
+        <label for="capacity">Capacity of Sack:</label>
+        <input class="input" type="number" id="capacity" placeholder="eg. 50" value="50"><br>
+        <button id="calculate">Calculate</button>
+      </div><br>
+      <p id="result"><b></b></p>
+    </div>
+  </div>
+  
+
+  <div class="split right" style="overflow:scroll; height:100%;">
+    <div class="a">
+      <h2><b>Let's solve the problem with the calculator</b></h2>
+      <center><p id="itemCount"><b><i>Number of items: 0</i></b></p></center>
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Profits</th>
+            <th>Weights</th>
+            <th>P-W Ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <p id="ratioContainer"></p>
+      <table id="detailedTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Profit Calculation</th>
+            <th>Remaining Weight Calculation</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+  
+</div>
+  <div class="sack-container">
+    <div class="sack">
+     
+    </div>
+    <img src="src/ss.jpg" alt="Image">
+  </div>
+
+  
+
+
+  <script src="js/script.js"></script>
+  
+</body>
+
+</html>

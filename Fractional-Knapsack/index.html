@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractional Knapsack Problem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div class="continer">
+
+    </div>
+    <section class="title-section" id="home">
+        <h1>Fractional Knapsack Problem</h1>
+    </section>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home"><b>Home</b></a></li>
+            <li><a href="calculator.html"><b>Calculator</b></a></li>
+            <li><a href="learn.html"><b>Learn</b></a></li>
+            <li><a href="code.html"><b>Code</b></a></li>
+        </ul>
+    </nav>
+
+   
+
+    <section class="hero-section">
+        <h2>Solve optimization Problem with Precision and Ease!</h2>
+        <p>"Effortlessly solve knapsack problems with user friendly interactive learning and a simple calculator!"</p>
+        <button class="cta-button" onclick="window.location.href='calculator.html'">Use Calculator</button>
+        <button class="cta-button" onclick="window.location.href='learn.html'">Start Learning</button>
+    </section>
+<section class="info-section">
+        <div class="info-container">
+            <h2>Overview of the Fractional Knapsack Problem</h2>
+            <p>The fractional knapsack problem is a well-known optimization problem where the goal is to maximize the total value of items you can carry in a knapsack with a weight limit. Unlike the 0/1 knapsack problem, you can take parts of an item, making it more flexible for real-world situations. This method helps you make better choices by considering the value of items relative to their weight. Additionally, the greedy algorithm used to solve this problem makes finding the best solution quick and efficient. It is commonly used in scenarios like budgeting, resource allocation, and investment strategies, where maximizing returns is crucial.</p>
+        </div>
+        <div class="visuals">
+            <img src="src/ksp.png" alt="Value-to-Weight Ratio Chart">
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h3>Frequently Asked Questions</h3>
+            
+            <div class="faq-item">
+                <details>
+                    <summary>How does the fractional knapsack problem differ from the 0/1 knapsack problem?</summary>
+                    <p>The main difference is that in the fractional knapsack problem, you can take fractions of an item, while in the 0/1 knapsack problem, you must take the whole item or leave it.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What is the significance of the value-to-weight ratio in this problem?</summary>
+                    <p>The value-to-weight ratio helps determine which items to include in the knapsack to maximize value without exceeding the weight limit.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Why is the fractional knapsack problem solved using a greedy algorithm?</summary>
+                    <p>The greedy algorithm is used because it allows for an efficient solution by always picking the item with the highest value-to-weight ratio first.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What are some real-world applications of the fractional knapsack problem?</summary>
+                    <p>The Knapsack Problem has several real-life applications, including:</p>
+                    <ul>
+                        <li><strong>Resource Allocation:</strong> Optimizing the allocation of limited resources (such as bandwidth, CPU time, or memory) to achieve the maximum benefit.</li>
+                        <li><strong>Investment Planning:</strong> Selecting the best combination of investment options to maximize returns without exceeding a budget or risk limit.</li>
+                        <li><strong>Load Planning:</strong> In logistics, packing items into containers or vehicles while optimizing the                        <li><strong>Load Planning:</strong> In logistics, packing items into containers or vehicles while optimizing the total value of the items that can be transported.</li>
+                        <li><strong>Knapsack in Cryptography:</strong> Solving certain types of cryptographic problems related to protecting information through optimization techniques.</li>
+                        <li><strong>Knapsack in Economics:</strong> Used in budgeting and cost management to optimize the use of financial resources across various investments or projects.</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What is the time complexity of solving the fractional knapsack problem?</summary>
+<p>The time complexity is O(n log n) due to the sorting step required to arrange items based on their value-to-weight ratio before selecting them for the knapsack.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="code.html">Code</a></li>
+        </ul>
+        <p>&copy; 2024 Fractional Knapsack Problem. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("read-more").addEventListener("click", function () {
+            var moreText = document.getElementById("more-text");
+            var initialText = document.getElementById("initial-text");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                this.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                this.innerHTML = "Read More...";
+            }
+        });
+    </script>
+ </div>
+</body>
+
+</html>
