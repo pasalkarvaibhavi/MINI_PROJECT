@@ -27,7 +27,7 @@ const generateBtn = document.getElementById('generate');
         }
 
         function checkStrength(password) {
-            const lengthCriteria = password.length >= 8; // Minimum length of 8
+            const lengthCriteria = password.length >= 8; 
             const upperCriteria = /[A-Z]/ .test(password);
             const digitCriteria = /[0-9]/.test(password);
             const specialCriteria = /[!@#$%^&*(),.?":{}|<>]/.test(password);
