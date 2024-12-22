@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Square Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Magic Square Generator</h1>
+    </header>
+
+    <main>
+        <section id="info">
+            <h2>What is a Magic Square?</h2>
+            <p>
+                A magic square is a fascinating mathematical arrangement of numbers in a grid, where the sums of numbers in 
+                each row, column, and diagonal are the same. This constant sum is known as the <strong>magic constant</strong>.
+            </p>
+            
+            <h3>Algorithm Explanation:</h3>
+            <p>
+                The <strong>Siamese Method</strong> is commonly used to construct odd-order magic squares:
+                <ol>
+                    <li>Start by placing the number 1 in the middle of the top row.</li>
+                    <li>Move diagonally up-right to place the next number.</li>
+                    <li>If the cell is occupied or out of bounds, move directly down instead.</li>
+                    <li>Repeat until all numbers are placed.</li>
+                </ol>
+            </p>
+
+            <h3>Applications:</h3>
+            <ul>
+                <li><strong>Art:</strong> Magic squares have been used in paintings and sculptures, such as Albrecht Dürer's "Melencolia I".</li>
+                <li><strong>Puzzles:</strong> Used in recreational mathematics and logic games.</li>
+                <li><strong>Cryptography:</strong> Provides the foundation for certain encryption techniques.</li>
+                <li><strong>Numerology:</strong> Found in cultural and historical texts for symbolic meanings.</li>
+            </ul>
+
+            <h3>Did You Know?</h3>
+            <ul>
+                <li>The smallest magic square is 3×3, with a magic constant of 15.</li>
+                <li>Magic squares date back to ancient China, appearing in the "Lo Shu Square" around 2200 BCE.</li>
+                <li>Larger magic squares can be constructed using variations of the Siamese or other algorithms.</li>
+            </ul>
+        </section>
+
+        <section id="input-section">
+            <label for="size"><h3>Enter an odd number (n): </h3></label>
+            <input type="number" id="size" min="1" step="2" placeholder="Odd number"/><br>
+            <button onclick="generateMagicSquare()">Generate Magic Square</button>
+        </section>
+
+        <div id="magic-constant-container"></div>
+        <div id="magic-square-container"></div>
+        <div id="step-by-step"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Magic Square Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
